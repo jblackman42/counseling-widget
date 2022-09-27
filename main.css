@@ -1,0 +1,65 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+#counseling-widget {
+    width: 1200px;
+    max-width: 90vw;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.map-container {
+    width: 100%;
+    height: 600px;
+}
+.map-container #map {
+    width: 100%;
+    height: 100%;
+}
+
+.locations {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.locations ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.locations ul li {
+    background-color: #eee;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.locations ul li h1 {
+    margin: 0;
+    width: 100%;
+}
+.info-container {
+    width: 33%;
+    min-width: 150px;
+    margin: 1rem 0;
+}
+.info-container p {
+    margin: 0;
+}
+.info-container .label {
+    margin: .5rem 0;
+    font-weight: bold;
+}
