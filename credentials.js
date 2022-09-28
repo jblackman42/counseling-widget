@@ -1,4 +1,4 @@
-const apiKey = 'AIzaSyAx29ReyoOYbQtYg2Qus4wJrxOKPxrm-is';   // <-------- put api key here in quotes - 'API_KEY'
+const apiKey = 'AIzaSyCyNQhqnGJpEnoJzkuEY63c1DF3zqeIMiI';   // <-------- put api key here in quotes - 'API_KEY'
 const locations = [
     {
         latLng: {lat: 33.614769, lng: -112.152802},
