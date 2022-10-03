@@ -6,12 +6,6 @@ var script = document.createElement('script');
 script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`;
 script.async = true;
 // Append the 'script' element to 'head'
-var link  = document.createElement('link');
-link.rel  = 'stylesheet';
-link.type = 'text/css';
-link.href = cssLink;
-link.media = 'all';
-document.head.appendChild(link);
 document.head.appendChild(script);
 
 counselingWidget.innerHTML = `
@@ -43,7 +37,7 @@ let map;
 window.initMap = function(filteredLocations) {
   // JS API is loaded and available
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 33.614977, lng: -112.152791 },
+    center: mapOrigin,
     zoom: 10,
     mapTypeControl: false,
     streetViewControl: false
@@ -87,7 +81,6 @@ window.initMap = function(filteredLocations) {
 const zoomOnPoint = (lat, lng) => {
     map.setCenter({lat: lat, lng: lng})
     map.setZoom(18)
-    // map.setCenter(new GLatLng(lat, lon), );
 }
 
 //function to list all the locations so it can be updated by running the function
